@@ -189,15 +189,13 @@ h5 {
 
 h3 {
     color: #000;
-
-    /* h3 */
     font-family: Anek Bangla;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    /* 52px */
 }
+
 
 .card-keindahan {
     background-image: url('../img/keindahan1.png');
@@ -210,8 +208,6 @@ h3 {
     padding-top: 270px;
     padding-left: 16px;
     color: #FFF;
-
-    /* h6 */
     font-family: Anek Bangla;
     font-size: 20px;
     font-style: normal;
@@ -240,6 +236,14 @@ h3 {
     color: #fff;
     margin-bottom: 30px;
 }
+
+
+/* Forum */
+#forum {
+    padding-top: 100px;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
