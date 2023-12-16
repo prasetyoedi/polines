@@ -26,7 +26,6 @@ nav {
 }
 
 
-
 .button-primary {
     display: flex;
     padding: 4px 32px;
@@ -35,6 +34,22 @@ nav {
     gap: 4px;
     border-radius: 100px;
     background: #4AB273;
+    color: #fff;
+}
+
+.button-sec {
+    display: flex;
+    height: 58px;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex: 1 0 0;
+
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
     color: #fff;
 }
 
@@ -59,6 +74,40 @@ h1 {
     font-size: 64px;
     font-weight: 500;
     line-height: 110%;
+}
+
+h2 {
+    color: var(--Monochrome-70, #707070);
+
+    /* h2 */
+    font-family: Anek Bangla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 52px */
+}
+
+h6 {
+    color: #FFF;
+
+    /* h6 */
+    font-family: Anek Bangla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.text-regular {
+    color: var(--Monochrome-0, #FFF);
+
+    /* Body Reguler */
+    font-family: Almarai;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 
@@ -175,6 +224,18 @@ h5 {
     /* 24px */
 }
 
+.title1 {
+    color: var(--Monochrome-100, #1D1D1D);
+
+    /* Title 1 */
+    font-family: Anek Bangla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 20px */
+}
+
 .title2 {
     color: var(--monochrome-100, #1D1D1D);
 
@@ -194,6 +255,16 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
+}
+
+.body-light {
+    color: var(--Monochrome-100, #1D1D1D);
+
+    /* Body Light */
+    font-family: Almarai;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
 }
 
 
@@ -227,23 +298,101 @@ h3 {
 }
 
 #keindahan .card-tags {
-    margin-left: 16px;
     padding: 2px 16px;
     gap: 10px;
     border-radius: 30px;
     border: 1px solid var(--monochrome-0, #FFF);
     background-color: transparent;
     color: #fff;
-    margin-bottom: 30px;
+}
+
+#keindahan .text-over-image {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 
 /* Forum */
-#forum {
+#forum-home {
     padding-top: 100px;
 }
 
+#forum-home .forum-col {
+    border-radius: 16px;
+    background: var(--Monochrome-10, #F8F8F8);
 
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+
+    margin: 20px;
+}
+
+/* #forum .col-kanan1 {
+    background-image: url('../img/bg-col-kanan.png');
+} */
+
+#kebudayaan-home .text-over-image {
+    position: absolute;
+    bottom: -40px;
+    left: 140px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#kebudayaan-home .card-tags {
+    padding: 2px 16px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--monochrome-0, #FFF);
+    background-color: transparent;
+    color: #fff;
+}
+
+#kebudayaan-home h6 {
+    margin-bottom: -3px;
+}
+
+#kebudayaan-home p {
+    margin-bottom: 7px;
+}
+
+
+/* tes-home */
+#tes-home {
+    padding-top: 100px;
+}
+
+#tes-home .col-md-8 {
+    display: flex;
+    width: 818px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 48px;
+
+    border-radius: 16px;
+    background: var(--Monochrome-10, #F8F8F8);
+}
+
+#tes-home .col-md-4 {
+    display: flex;
+    width: 397px;
+    padding: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 70px;
+
+    border-radius: 16px;
+    background: var(--Monochrome-100, #1D1D1D);
+}
 
 
 @media screen and (max-width: 768px) {
@@ -262,6 +411,18 @@ h3 {
 
     h1 {
         font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .title2 {
+        font-size: 16px;
     }
 
     .btn-eksplor {
@@ -326,5 +487,47 @@ h3 {
 
     #keindahan .card-title {
         margin-top: 20px;
+    }
+
+    .keindahan2 {
+        margin-top: 40px;
+        padding-left: 50px;
+    }
+
+    #forum-home .forum-col {
+        width: 90%;
+    }
+
+    #kebudayaan-home .col-md-4 {
+        margin: 20px;
+        width: 90%;
+    }
+
+    #kebudayaan-home .text-over-image {
+        bottom: -35px;
+        left: 127px;
+    }
+
+    #tes-home .col-md-8 {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    #tes-home .col-md-4 {
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    #tes-home .d-flex {
+        margin-top: -40px;
+    }
+
+    #tes-home .button-sec {
+        font-size: 14px;
+    }
+
+    #tes-home img {
+        display: none;
     }
 }
