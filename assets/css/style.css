@@ -314,6 +314,11 @@ h3 {
     color: white;
 }
 
+#keindahan .col-keindahan {
+    width: 292px;
+    height: 409px;
+}
+
 
 /* Forum */
 #forum-home {
@@ -330,13 +335,8 @@ h3 {
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-
     margin: 20px;
 }
-
-/* #forum .col-kanan1 {
-    background-image: url('../img/bg-col-kanan.png');
-} */
 
 #kebudayaan-home .text-over-image {
     position: absolute;
@@ -362,7 +362,6 @@ h3 {
 #kebudayaan-home p {
     margin-bottom: 7px;
 }
-
 
 /* tes-home */
 #tes-home {
@@ -420,6 +419,9 @@ footer .sub-title {
     line-height: normal;
     letter-spacing: -0.129px;
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     nav {
@@ -524,9 +526,12 @@ footer .sub-title {
         width: 90%;
     }
 
-    #kebudayaan-home .col-md-4 {
-        margin: 20px;
-        width: 90%;
+    #kebudayaan-home {
+        margin: 0;
+    }
+
+    #kebudayaan-home img {
+        width: 95%;
     }
 
     #kebudayaan-home .text-over-image {
