@@ -19,6 +19,7 @@ section {
 nav {
     padding-left: 80px;
     padding-right: 80px;
+    background-color: #ECECEC;
 }
 
 .navbar-margin {
@@ -90,7 +91,6 @@ h2 {
 
 h6 {
     color: #FFF;
-
     /* h6 */
     font-family: Anek Bangla;
     font-size: 20px;
@@ -102,7 +102,6 @@ h6 {
 
 .text-regular {
     color: var(--Monochrome-0, #FFF);
-
     /* Body Reguler */
     font-family: Almarai;
     font-size: 15px;
@@ -259,8 +258,6 @@ h3 {
 
 .body-light {
     color: var(--Monochrome-100, #1D1D1D);
-
-    /* Body Light */
     font-family: Almarai;
     font-size: 15px;
     font-style: normal;
@@ -297,26 +294,32 @@ h3 {
     line-height: 180%;
 }
 
-#keindahan .card-tags {
+
+.text-over-image {
+    position: absolute;
+    bottom: -25px;
+    left: 70px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#keindahan h6 {
+    margin-bottom: -5px;
+}
+
+#keindahan .col-keindahan {
+    width: 292px;
+    height: 409px;
+}
+
+.card-tags {
     padding: 2px 16px;
     gap: 10px;
     border-radius: 30px;
     border: 1px solid var(--monochrome-0, #FFF);
     background-color: transparent;
     color: #fff;
-}
-
-#keindahan .text-over-image {
-    position: absolute;
-    bottom: 0;
-    left: 80px;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-#keindahan .col-keindahan {
-    width: 292px;
-    height: 409px;
+    margin-top: -12px;
 }
 
 
@@ -397,6 +400,7 @@ h3 {
 
 footer {
     background: var(--Monochrome-100, #1D1D1D);
+    padding-bottom: 30px;
 }
 
 footer .text {
@@ -419,8 +423,6 @@ footer .sub-title {
     line-height: normal;
     letter-spacing: -0.129px;
 }
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -560,5 +562,170 @@ footer .sub-title {
 
     #tes-home img {
         display: none;
+    }
+}
+
+
+/* Diff page */
+#header-eksplor {
+    background-image: url("../img/bg-eksplor.png");
+    background-size: cover;
+    background-position: center;
+
+    margin-top: 77px;
+    height: 135px;
+    padding-top: 45px;
+    text-align: center;
+}
+
+#search .search-container {
+    padding: 20px;
+    border-bottom: 1px solid var(--Monochrome-40, #C7C7C7);
+}
+
+#search .col a {
+    color: var(--Monochrome-70, #707070);
+    font-family: Almarai;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.row-search .active {
+    color: #000;
+    font-family: Almarai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+}
+
+#search .col a:hover {
+    color: #000;
+    font-family: Almarai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Monochrome-30, #E2E2E2);
+}
+
+.search-input {
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top: 5px;
+    line-height: 20px;
+    transition: width 0.4s linear
+}
+
+.search .search-input {
+    padding: 0 10px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear;
+}
+
+.search-input::placeholder {
+    color: var(--Monochrome-70, #707070);
+
+    font-family: Almarai;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.eksplor .simpan {
+    position: absolute;
+    left: 35px;
+    top: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.detail-eksplor {
+    padding-top: 100px;
+}
+
+.container-detail-eksplor {
+    padding-left: 315px;
+    padding-right: 315px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #header-eksplor {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    #search .col {
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .eksplor .col-md-3 {
+        margin-top: 15px;
+        padding-left: 50px;
+    }
+
+    .container-detail-eksplor {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sketchfab-embed-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 54.87%;
+    }
+
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lihat {
+        margin-top: -40px;
     }
 }
