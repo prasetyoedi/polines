@@ -113,7 +113,7 @@ h6 {
 /* Home  */
 
 #home .container {
-    padding-top: 100px;
+    padding-top: 175px;
 }
 
 #home .text {
@@ -121,7 +121,6 @@ h6 {
     font-size: 15px;
     font-weight: 300;
     line-height: 180%;
-    /* 27px */
 }
 
 .gambar {
@@ -196,7 +195,7 @@ h6 {
 
 /* Keindahan */
 #keindahan {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 #keindahan .kotak {
@@ -397,6 +396,9 @@ h3 {
     background: var(--Monochrome-100, #1D1D1D);
 }
 
+#tes-home .d-flex {
+    padding-left: -100px;
+}
 
 footer {
     background: var(--Monochrome-100, #1D1D1D);
@@ -436,7 +438,7 @@ footer .sub-title {
     }
 
     #home .container {
-        padding-top: 10px;
+        padding-top: 100px;
     }
 
     h1 {
@@ -507,6 +509,10 @@ footer .sub-title {
         padding-top: 24px;
         padding-right: 0;
         padding-left: 50px;
+    }
+
+    #keindahan {
+        padding-top: 80px;
     }
 
     #keindahan .kotak {
@@ -604,9 +610,9 @@ footer .sub-title {
 #search .col a:hover {
     color: #000;
     font-family: Almarai;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .search {
@@ -653,6 +659,21 @@ footer .sub-title {
     top: 30px;
     transform: translate(-50%, -50%);
 }
+
+.eksplor .simpan svg {
+    padding: 8px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.eksplor-konten {
+    padding-bottom: 100px;
+}
+
+#myIcon.clicked {
+    background: #4AB273;
+}
+
 
 .detail-eksplor {
     padding-top: 100px;

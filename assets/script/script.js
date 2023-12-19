@@ -39,7 +39,7 @@ $(document).ready(function () {
         margin: 10,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 6000,
         autoplayHoverPause: false,
         center: true,
         navText: [
@@ -57,6 +57,20 @@ $(document).ready(function () {
                 items: 3
             }
         },
-        autoplaySpeed: 2000, // Nilai default adalah 3000 (3 detik)
+        autoplaySpeed: 6000,
     });
 });
+
+
+function changeColor() {
+    var icon = document.getElementById("myIcon");
+    var iconPath = document.getElementById("iconPath");
+    if (!icon.classList.contains("clicked")) {
+        icon.classList.add("clicked");
+        iconPath.setAttribute("fill", "#4AB273");
+    } else {
+        icon.classList.remove("clicked");
+        iconPath.setAttribute("fill", "rgba(0, 0, 0, 0.20);");
+    }
+}
+
