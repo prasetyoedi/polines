@@ -1,45 +1,10 @@
-// Owlcarousel
-// $(document).ready(function () {
-//     $(".owl-carousel").owlCarousel({
-//         loop: true,
-//         margin: 10,
-//         nav: true,
-//         autoplay: true,
-//         autoplayTimeout: 3000,
-//         autoplayHoverPause: true,
-//         center: true,
-//         navText: [
-//             "<i class='fa fa-angle-left'></i>",
-//             "<i class='fa fa-angle-right'></i>"
-//         ],
-//         responsive: {
-//             0: {
-//                 items: 1
-//             },
-//             600: {
-//                 items: 1
-//             },
-//             1000: {
-//                 items: 3
-//             }
-//         }
-//     });
-// });
-
-// $(document).ready(function () {
-//     $("#owl-demo").owlCarousel({
-//         navigation: true
-//     });
-// });
-
-
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         autoplayHoverPause: false,
         center: true,
         navText: [
@@ -57,7 +22,7 @@ $(document).ready(function () {
                 items: 3
             }
         },
-        autoplaySpeed: 6000,
+        autoplaySpeed: 4000,
     });
 });
 
@@ -73,4 +38,3 @@ function changeColor() {
         iconPath.setAttribute("fill", "rgba(0, 0, 0, 0.20);");
     }
 }
-
