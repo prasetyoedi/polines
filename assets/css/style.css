@@ -415,7 +415,6 @@ h3 {
 }
 
 
-
 #kebudayaan-home .text-over-image {
     position: absolute;
     bottom: -40px;
@@ -897,7 +896,7 @@ footer .sub-title {
 
 .balasan input {
     display: flex;
-    padding: 8px 16px;
+    padding: 8px;
     justify-content: space-between;
     align-items: center;
     flex: 1 0 0;
@@ -1070,16 +1069,20 @@ a {
         margin-top: -78px;
         margin-left: 0;
         margin-right: 10px;
-        height: 160px;
+        height: 125px;
     }
 
     #title-kuis .col-md-3 {
         padding: 0;
+        height: 80px;
     }
 
     .kuis-konten .col-md-4 {
-        margin: 7px;
+        margin: 10px;
+        width: 360px;
+        height: 250px;
     }
+
 
     #title-kuis .text-body {
         font-size: 14px;
@@ -1196,6 +1199,10 @@ a {
         margin-top: 0;
     }
 
+    .unggah {
+        padding: 6px 16px;
+    }
+
     .modal {
         margin-top: 200px;
     }
@@ -1204,4 +1211,21 @@ a {
         padding-left: 10px;
     }
 
+    .balasan input {
+        display: flex;
+        padding: 4;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        border-radius: 12px;
+        background: var(--Monochrome-0, #FFF);
+    }
+
+    #detail-acara iframe {
+        height: auto;
+    }
+
+    #detail-acara .gambar1 {
+        display: none;
+    }
 }
