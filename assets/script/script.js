@@ -63,3 +63,4 @@ function changeColor() {
         iconPath.setAttribute("fill", "rgba(0, 0, 0, 0.20);");
     }
 }
+
