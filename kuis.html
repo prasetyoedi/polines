@@ -41,20 +41,28 @@
                         <a class="nav-link" href="forum.html">Forum</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="#">Acara</a>
+                        <a class="nav-link" href="acara.html">Acara</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Kuis</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <img src="assets/img/asep.png" alt="">
-                    <div class="mt-2 ms-3">Hassan Aldhi
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ms-2" width="12" height="8" viewBox="0 0 12 8"
-                            fill="none">
-                            <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-width="1.5" />
-                        </svg>
-                    </div>
+                <div class="dropdown d-flex align-items-start">
+                    <button class="btn" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/small_pp.png" alt="">
+                            <div class="mt-2 ms-3">Bardi Bagaskara
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ms-2" width="12" height="8" viewBox="0 0 12 8"
+                                    fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="#">Keluar</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -118,7 +126,7 @@
                             </div>
                             <div class="col">
                                 <a href="#">
-                                    <div class="btn-kuis-coba-lagi">Lihat Hasil</div>
+                                    <div class="btn-kuis-coba-lagi">Coba Lagi</div>
                                 </a>
                             </div>
                         </div>
