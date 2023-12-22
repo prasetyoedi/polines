@@ -1071,6 +1071,10 @@ a {
     color: #fff;
 }
 
+.btn-kuis-coba-lagi:hover{
+    background-color: #35965C;
+}
+
 .btn-kuis-mulai {
     display: flex;
     padding: 12px 32px;
@@ -1084,6 +1088,9 @@ a {
     color: #fff;
 }
 
+.btn-kuis-lihat:hover{
+    border: 1px solid white;
+}
 
 @media screen and (max-width: 768px) {
     #title-kuis .container {
