@@ -1483,13 +1483,13 @@ a {
         margin-top: 50px;
     }
     .text-over-forum {
-        top: 25;
+        top: 20%;
         left: 70%;
-        width: 400px;
+        width: 260px;
     }
 
     #forum-home p {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 8px;
     }
 }
