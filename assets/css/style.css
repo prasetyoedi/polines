@@ -699,8 +699,10 @@ footer .sub-title {
     background-image: url("../img/bg-eksplor.png");
     background-size: cover;
     background-position: center;
-    color: white; /* Set text color to be visible against the background */
-    padding: 20px; /* Add padding to make the text readable */
+    color: white;
+    /* Set text color to be visible against the background */
+    padding: 20px;
+    /* Add padding to make the text readable */
     text-align: center;
 }
 
@@ -722,7 +724,8 @@ footer .sub-title {
 
 
 #search .col a {
-    color: #999999;;
+    color: #999999;
+    ;
     font-family: Almarai;
     font-size: 15px;
     font-style: normal;
@@ -849,6 +852,7 @@ footer .sub-title {
     width: 100%;
     outline: none;
 }
+
 /* Forum */
 #forum {
     padding-top: 40px;
@@ -1222,6 +1226,7 @@ a {
     .unggahan1 {
         margin-top: 0;
     }
+
     .modal {
         margin-top: 200px;
     }
@@ -1347,7 +1352,7 @@ a {
 
 
 #login-register {
-    background-image: url("../img/login-register/bg-login-register.png");
+    background-image: url("../img/login-register/bg-login-register.jpg");
     background-size: cover;
     background-position: center;
     padding-top: 10%;
@@ -1433,10 +1438,14 @@ a {
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.20);
 }
+
 .progress-container {
-    height: 5px; /* Set fixed height */
-    width: 100%; /* Set full width */
-    background-color: #ccc; /* Background color for the container */
+    height: 5px;
+    /* Set fixed height */
+    width: 100%;
+    /* Set full width */
+    background-color: #ccc;
+    /* Background color for the container */
     border-radius: 16px;
 }
 
@@ -1444,8 +1453,10 @@ a {
     height: 100%;
     width: 0;
     border-radius: 16px;
-    background-color: #35965C; /* Bar color */
-    transition: width 30s linear; /* Animation transition */
+    background-color: #35965C;
+    /* Bar color */
+    transition: width 30s linear;
+    /* Animation transition */
 }
 
 .btn-soal {
@@ -1465,6 +1476,10 @@ a {
 }
 
 
+#footer a:hover {
+    color: #4AB273;
+}
+
 
 @media screen and (max-width: 768px) {
     #login-register {
@@ -1481,6 +1496,7 @@ a {
     #login-register .login {
         margin-top: 50px;
     }
+
     .text-over-forum {
         top: 20%;
         left: 70%;
@@ -1492,11 +1508,10 @@ a {
         margin-bottom: 8px;
     }
 }
+
 @media screen and (max-width: 512px) {
-    .img-hidden{
+    .img-hidden {
         visibility: hidden;
         position: absolute;
     }
 }
-
-    
