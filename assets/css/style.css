@@ -1493,5 +1493,11 @@ a {
         margin-bottom: 8px;
     }
 }
+@media screen and (max-width: 512px) {
+    .img-hidden{
+        visibility: hidden;
+        position: absolute;
+    }
+}
 
     
