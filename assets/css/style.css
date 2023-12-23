@@ -1495,6 +1495,15 @@ a {
     visibility: hidden;
 }
 
+.modal-content{
+    border-radius: 16px;
+    background-color: #F8F8F8;
+}
+
+.modal-hasil {
+    margin-top: 200px;
+}
+
 
 @media screen and (max-width: 768px) {
     #login-register {

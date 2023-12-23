@@ -83,6 +83,7 @@ function resetProgressBar() {
 
 let no = 0;
 let benar = 0;
+let hasil = 0
 // Mendefinisikan fungsi checkAnswer dalam lingkup global
 function checkAnswer(selectedOption) {
     const correctAnswer = 'c'; // Ubah ini sesuai jawaban yang benar
@@ -105,7 +106,7 @@ function checkAnswer(selectedOption) {
             answerContainer.style.backgroundColor = 'initial';
         }
 
-        let hasil = Math.round((benar / no) * 100);
+        hasil = Math.round((benar / no) * 100);
 
         const akurasi = document.getElementById('akurasi');
         akurasi.textContent = hasil+'%';
@@ -144,6 +145,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // Kode JavaScript lainnya di sini
 });
 
+function showResultModal(message) {
+    const resultMessage = document.getElementById('resultMessage');
+    resultMessage.textContent = message;
+
+    // Membuka modal
+    const resultModal = new bootstrap.Modal(document.getElementById('resultModal'));
+    resultModal.show();
+}
+
+function redirectToKuis() {
+    // Mengarahkan ke halaman kuis.html
+    window.location.href = 'kuis.html';
+}
 
 let currentQuestionIndex = 0;
 let soal = 1;
@@ -209,6 +223,14 @@ function resetState() {
         // Reset progress bar (tambahkan logika resetProgressBar sesuai kebutuhan)
         resetProgressBar();
     } else {
-        console.log("Semua pertanyaan telah dijawab");
+        const icHasil = document.getElementById('ic_hasil');
+        if(hasil > 70){
+            icHasil.src = 'assets/img/icon/jawaban_benar.svg';
+            showResultModal("Selamat Anda Lulus!");
+        }else{
+            icHasil.src = 'assets/img/icon/jawaban_salah.svg';
+            showResultModal("Kamu belum Lulus, Coba lagi yah :)");
+        }
+
     }
 }

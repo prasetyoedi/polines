@@ -94,6 +94,40 @@
                             
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                    <div class="modal modal-hasil fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <p class="modal-title body-light" id="resultModalLabel">Hasil Kuis</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center d-flex flex-column align-items-center">
+                                <img src="" id="ic_hasil" alt="assets/image/icon/jawaban_benar.svg" class="mb-3">
+                                <h5 id="resultMessage">Selamat Anda Lulus!</h5>
+                            </div>                            
+                            <div class="modal-footer justify-content-between">
+                                <div class="col-6">
+                                    <div class="text-body mt-2">Akurasi</div>
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="me-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                                <path
+                                                    d="M7.48634 27.1666C6.89079 27.1666 6.38279 26.9568 5.96234 26.5373C5.54279 26.1177 5.33301 25.6097 5.33301 25.0133V7.98663C5.33301 7.39107 5.54279 6.88307 5.96234 6.46263C6.3819 6.04307 6.8899 5.83329 7.48634 5.83329H13.753C13.6321 5.15329 13.7952 4.53863 14.2423 3.98929C14.6895 3.44085 15.2752 3.16663 15.9997 3.16663C16.7419 3.16663 17.3366 3.44085 17.7837 3.98929C18.2299 4.53863 18.3841 5.15329 18.2463 5.83329H24.513C25.1086 5.83329 25.6166 6.04307 26.037 6.46263C26.4566 6.88218 26.6663 7.39018 26.6663 7.98663V25.0133C26.6663 25.6088 26.4566 26.1168 26.037 26.5373C25.6175 26.9568 25.1095 27.1666 24.513 27.1666H7.48634ZM7.48634 25.8333H24.513C24.7175 25.8333 24.9055 25.748 25.077 25.5773C25.2477 25.4057 25.333 25.2177 25.333 25.0133V7.98663C25.333 7.78218 25.2477 7.59418 25.077 7.42263C24.9055 7.25196 24.7175 7.16663 24.513 7.16663H7.48634C7.2819 7.16663 7.0939 7.25196 6.92234 7.42263C6.75167 7.59418 6.66634 7.78218 6.66634 7.98663V25.0133C6.66634 25.2177 6.75167 25.4057 6.92234 25.5773C7.0939 25.748 7.2819 25.8333 7.48634 25.8333ZM9.99967 22.1933H17.9997V20.86H9.99967V22.1933ZM9.99967 17.1666H21.9997V15.8333H9.99967V17.1666ZM9.99967 12.14H21.9997V10.8066H9.99967V12.14ZM15.9997 6.42396C16.2886 6.42396 16.5277 6.32974 16.717 6.14129C16.9063 5.95285 17.0006 5.71374 16.9997 5.42396C16.9997 5.13507 16.905 4.8964 16.7157 4.70796C16.5263 4.51951 16.2877 4.4244 15.9997 4.42263C15.7108 4.42263 15.4721 4.51729 15.2837 4.70663C15.0952 4.89596 15.0006 5.13463 14.9997 5.42263C14.9997 5.71151 15.0943 5.95063 15.2837 6.13996C15.473 6.32929 15.7117 6.42485 15.9997 6.42396Z"
+                                                    fill="#1D1D1D" />
+                                            </svg>
+                                        </h4>
+                                        <h4 id="akurasi">0%</h4>
+                                    </div>
+                                </div>
+                                <h3 style="color: #35965C;">20XP</h3>
+                                <div type="button" class="btn-kuis-coba-lagi" onclick="redirectToKuis()">Klaim</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
                     <div class="kolom-pertanyaan">
                         <div class="progress-container mb-3">
                             <div class="progress-bar" id="progress"></div>
