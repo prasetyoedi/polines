@@ -224,8 +224,10 @@ function resetState() {
         resetProgressBar();
     } else {
         const icHasil = document.getElementById('ic_hasil');
+        const akurasi = document.getElementById('akurasi_hasil');
         if(hasil > 70){
             icHasil.src = 'assets/img/icon/jawaban_benar.svg';
+            akurasi.textContent = hasil+"%";
             showResultModal("Selamat Anda Lulus!");
         }else{
             icHasil.src = 'assets/img/icon/jawaban_salah.svg';
