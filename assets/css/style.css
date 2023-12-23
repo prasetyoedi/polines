@@ -397,7 +397,6 @@ h3 {
 #forum .forum-col {
     border-radius: 16px;
     background: var(--Monochrome-10, #F8F8F8);
-
     display: flex;
     padding: 24px;
     flex-direction: column;
