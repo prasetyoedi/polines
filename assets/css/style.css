@@ -1487,6 +1487,14 @@ a {
     color: #4AB273;
 }
 
+.jawaban {
+    cursor: pointer;
+}
+
+#keterangan{
+    visibility: hidden;
+}
+
 
 @media screen and (max-width: 768px) {
     #login-register {
