@@ -203,6 +203,8 @@ function resetState() {
         const noSoal = document.getElementById('no_soal');
         noSoal.textContent = soal+'/5';
 
+        keterangan.style.visibility = 'hidden';
+
         // Perbarui opsi jawaban
         const answerContainers = document.querySelectorAll('.jawaban');
         answerContainers.forEach((answerContainer, index) => {
