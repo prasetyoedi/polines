@@ -81,4 +81,3 @@ function resetProgressBar() {
     });
 }
 
-CKEDITOR.replace('description');
