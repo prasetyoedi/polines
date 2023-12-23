@@ -95,6 +95,13 @@ nav {
     background: #35965C;
 }
 
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #35965C;
+}
 
 h1 {
     font-size: 64px;
@@ -381,6 +388,10 @@ h3 {
 
 
 /* Forum */
+/* #forum-home {
+    margin-top: 20px;
+    background-color: #ECECEC;
+} */
 
 #forum-home .forum-col {
     border-radius: 16px;
@@ -1226,6 +1237,7 @@ a {
     .unggahan1 {
         margin-top: 0;
     }
+
     nav ul li {
         padding-left: 10px;
     }
