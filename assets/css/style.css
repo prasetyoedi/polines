@@ -71,7 +71,7 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    width: 500px;
+    width: 100%;
 }
 
 .daftar {
@@ -381,9 +381,6 @@ h3 {
 
 
 /* Forum */
-#forum-home {
-    padding-top: 100px;
-}
 
 #forum-home .forum-col {
     border-radius: 16px;
@@ -394,8 +391,18 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 24px;
-    margin: 20px;
+    gap: 16px;
+}
+
+#forum .forum-col {
+    border-radius: 16px;
+    background: var(--Monochrome-10, #F8F8F8);
+
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #forum-home .image-container {
@@ -403,7 +410,7 @@ h3 {
     overflow: hidden;
 }
 
-#forum-home .text-over-image {
+#forum-home .text-over-forum {
     position: absolute;
     bottom: 60px;
     left: 50%;
@@ -630,10 +637,6 @@ footer .sub-title {
         padding-left: 30px;
     }
 
-    #forum-home .forum-col {
-        width: 90%;
-    }
-
     #kebudayaan-home {
         margin: 0;
     }
@@ -674,7 +677,7 @@ footer .sub-title {
         padding: 10px;
     }
 
-    #forum-home .text-over-image {
+    #forum-home .text-over-forum {
         position: absolute;
         bottom: 60px;
         left: 50%;
@@ -693,13 +696,12 @@ footer .sub-title {
 
 /* Diff page */
 #header-eksplor {
+    margin-top: 75px;
     background-image: url("../img/bg-eksplor.png");
     background-size: cover;
     background-position: center;
-
-    margin-top: 77px;
-    height: 135px;
-    padding-top: 45px;
+    color: white; /* Set text color to be visible against the background */
+    padding: 20px; /* Add padding to make the text readable */
     text-align: center;
 }
 
@@ -721,7 +723,7 @@ footer .sub-title {
 
 
 #search .col a {
-    color: var(--Monochrome-70, #707070);
+    color: #999999;;
     font-family: Almarai;
     font-size: 15px;
     font-style: normal;
@@ -735,6 +737,15 @@ footer .sub-title {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+}
+
+#search .active {
+    color: #000;
+    font-family: Almarai;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 #search .col a:hover {
@@ -828,47 +839,17 @@ footer .sub-title {
 }
 
 
+
 .custom-dropdown {
-    position: relative;
+    width: 100%;
 }
-
-.custom-dropdown::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 8px;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="black" stroke-width="1.5" /></svg>') no-repeat center center;
-    background-size: contain;
-    border: none;
-    background-color: transparent;
-    pointer-events: none;
-}
-
-
 
 .custom-dropdown select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding-right: 20px;
-}
-
-.custom-dropdown {
-    padding: 10px;
-    border-radius: 0;
-    background-color: transparent;
-    border: 1px solid lightgray;
-}
-
-.custom-dropdown:focus {
-    padding: 10px;
+    border: 1px solid #ced4da;
+    padding: 8px;
+    width: 100%;
     outline: none;
-    box-shadow: none;
 }
-
 /* Forum */
 #forum {
     padding-top: 40px;
@@ -883,9 +864,8 @@ footer .sub-title {
 
 #forum .unggahan {
     padding: 16px 24px;
-    height: 90px;
     border-radius: 16px;
-    border: 1px solid var(--Monochrome-40, #C7C7C7);
+    /* border: 1px solid var(--Monochrome-40, #C7C7C7); */
     background: var(--Monochrome-10, #F8F8F8);
     margin-right: 25px;
 }
@@ -897,14 +877,13 @@ footer .sub-title {
     align-items: center;
     gap: 4px;
     flex: 1 0 0;
-
+    width: 100%;
     border-radius: 100px;
     background: var(--Primary-100, #4AB273);
 }
 
-#forum .col-md-4 {
+#forum .tagar-container {
     display: flex;
-    width: 395px;
     padding: 16px;
     flex-direction: column;
     justify-content: center;
@@ -951,6 +930,7 @@ footer .sub-title {
 .balasan-lainnya {
     color: var(--Primary-200, #35965C);
     font-family: Almarai;
+    padding-left: 16px;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1243,11 +1223,6 @@ a {
     .unggahan1 {
         margin-top: 0;
     }
-
-    .unggah {
-        padding: 6px 16px;
-    }
-
     .modal {
         margin-top: 200px;
     }
@@ -1305,6 +1280,8 @@ a {
 }
 
 .image-container img {
+    width: 100%;
+    height: 1;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -1313,13 +1290,13 @@ a {
 }
 
 #soal {
-    padding-top: 130px;
+    padding-top: 110px;
     padding-bottom: 100px;
 
 }
 
 .kolom-atas {
-    width: 820px;
+    width: 100%;
     padding: 16px 24px;
     border-radius: 16px;
     border: 1px solid #FFF;
@@ -1327,8 +1304,8 @@ a {
 }
 
 .kolom-pertanyaan {
-    margin-top: 20px;
-    width: 820px;
+    margin-top: 16px;
+    width: 100%;
     padding: 24px;
     gap: 16px;
 
@@ -1338,7 +1315,7 @@ a {
 }
 
 .kolom-pertanyaan .col-md-6 {
-    height: 120px;
+    height: 100px;
     padding: 24px;
     justify-content: center;
     align-items: center;
@@ -1350,7 +1327,7 @@ a {
 }
 
 .kolom-pertanyaan .col-md-6:hover {
-    background: #35965C;
+    background: #ffffff3b;
     cursor: pointer;
 }
 
@@ -1457,6 +1434,38 @@ a {
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.20);
 }
+.progress-container {
+    height: 5px; /* Set fixed height */
+    width: 100%; /* Set full width */
+    background-color: #ccc; /* Background color for the container */
+    border-radius: 16px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 16px;
+    background-color: #35965C; /* Bar color */
+    transition: width 30s linear; /* Animation transition */
+}
+
+.btn-soal {
+    padding: 12px 32px;
+    border-radius: 100px;
+    background: #fff;
+    border: none;
+    color: #000;
+}
+
+.btn-soal:hover {
+    background: #dddddd;
+}
+
+.btn-soal:disabled {
+    background: #686868;
+}
+
+
 
 @media screen and (max-width: 768px) {
     #login-register {
@@ -1473,4 +1482,16 @@ a {
     #login-register .login {
         margin-top: 50px;
     }
+    .text-over-forum {
+        top: 25;
+        left: 70%;
+        width: 400px;
+    }
+
+    #forum-home p {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
 }
+
+    

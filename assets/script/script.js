@@ -64,3 +64,21 @@ function changeColor() {
     }
 }
 
+const progressBar = document.getElementById('progress');
+progressBar.style.width = '100%';
+
+function resetProgressBar() {
+    const progressBar = document.getElementById('progress');
+
+    // Set lebar menjadi 0 tanpa transisi
+    progressBar.style.transition = 'width 0s';
+    progressBar.style.width = '0px';
+
+    // Menerapkan transisi kembali ke 100% pada frame selanjutnya
+    requestAnimationFrame(() => {
+        progressBar.style.transition = 'width 30s linear';
+        progressBar.style.width = '100%';
+    });
+}
+
+CKEDITOR.replace('description');

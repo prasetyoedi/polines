@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum RuangBudaya</title>
+    <link rel="icon" href="assets/img/fav-icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Anek+Bangla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-margin" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="eksplor.html">Eksplor</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="acara.html">Acara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kuis.html">Kuis</a>
+                    </li>
+                </ul>
+                <div class="dropdown d-flex align-items-start">
+                    <button class="btn" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/small_pp.png" alt="">
+                            <div class="mt-2 ms-3">Bardi Bagaskara
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ms-2" width="12" height="8" viewBox="0 0 12 8"
+                                    fill="none">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="black" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="#">Keluar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="search" class="kategori-forum">
+        <div class="container">
+            <div class="row search-container align-items-center">
+                <div class="col-md-9">
+                    <div class="row row-search mb-2 mb-md-0 col-md-10 ">
+                        <div class="col"><a href="#"><span class="active">Untuk Anda</span></a></div>
+                        <div class="col"><a href="#">Terpopuler</a></div>
+                        <div class="col"><a href="#">Terbaru</a></div>
+                        <div class="col"><a href="#">Foto</a></div>
+                        <div class="col"><a href="#">Video</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <a href="#" class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M21.7505 20.6895L16.0865 15.0255C17.4475 13.3914 18.1263 11.2956 17.9815 9.17389C17.8366 7.05219 16.8794 5.06801 15.3089 3.6341C13.7384 2.2002 11.6755 1.42697 9.54942 1.47528C7.42333 1.52359 5.39772 2.38971 3.89396 3.89347C2.3902 5.39723 1.52408 7.42284 1.47577 9.54893C1.42746 11.675 2.20068 13.7379 3.63459 15.3084C5.0685 16.8789 7.05268 17.8361 9.17438 17.981C11.2961 18.1258 13.3919 17.4471 15.026 16.086L20.69 21.75L21.7505 20.6895ZM3.00045 9.74996C3.00045 8.41494 3.39633 7.1099 4.13803 5.99987C4.87973 4.88983 5.93394 4.02467 7.16734 3.51378C8.40074 3.00289 9.75794 2.86921 11.0673 3.12966C12.3767 3.39011 13.5794 4.03299 14.5234 4.97699C15.4674 5.921 16.1103 7.12373 16.3708 8.4331C16.6312 9.74248 16.4975 11.0997 15.9866 12.3331C15.4757 13.5665 14.6106 14.6207 13.5006 15.3624C12.3905 16.1041 11.0855 16.5 9.75045 16.5C7.96085 16.498 6.24512 15.7862 4.97967 14.5207C3.71423 13.2553 3.00244 11.5396 3.00045 9.74996Z"
+                                    fill="#4A5A67" />
+                            </svg>
+                        </a>
+                        <input type="text" class="search-input" placeholder="Cari Disini..." name="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="forum">
+        <div class="container">
+            <div class="d-flex flex-column flex-lg-row col-12" style="align-self: flex-start;">
+                <div class="row col-lg-7 me-lg-4">
+                    <div class="unggahan">
+                        <div class="row flex-column flex-lg-row">
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <div class=""><img src="assets/img/forum/anda.png" alt=""></div>
+                                    <spam class="ms-3"><span class="title3 fw-bolder">Anda</span> <br> <span class="body-light">
+                                    🍀 Pemula Tradisi</span></spam>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pt-3 pt-lg-0">
+                                <button type="button" class="btn-kuis-coba-lagi" style="width: 100%; height: 100%;" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    + Mulai Unggah
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl" >
+                            <div class="modal-content" style="background-color: #F8F8F8;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fw-bold" id="exampleModalLabel">Mulai Unggah</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="title">Judul unggahan</label>
+                                        <input type="text" class="form-control" id="title">
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="description">Deskripsi</label>
+                                        <textarea class="form-control" id="description" rows="4" placeholder="Apa yang akan kamu bahas?"></textarea>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-kuis-coba-lagi">Unggah</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="mt-4 px-sm-0 px-3">                   
+                        <div class="p-0">
+                            <div class="forum-col">
+                                <div class="d-flex me-3">
+                                    <div class=""><img src="assets/img/bambang.png" alt="Gambar Bambang"></div>
+                                    <div class="ms-3">
+                                        <div><span class="fw-bold">Budi Bambang</span> <span class="caption ms-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="4" height="4"
+                                                viewBox="0 0 4 4" fill="none">
+                                                <circle cx="2" cy="2" r="2" fill="#707070" />
+                                            </svg> 2 hari yang lalu</span></div>
+                                            👑 Maestro Budaya
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="title1 mt-4">
+                                    Bagaimana filosofi kebudayaan Suku Minangkabau dalam kehidupan ?
+                                </div>
+                                <div class="body-light mt-3">
+                                    <p>Filosofi kebudayaan Minangkabau memiliki karakteristik yang khas dan 
+                                        mendalam, mencerminkan nilai-nilai adat dan tradisi yang dipegang teguh 
+                                        oleh masyarakat Minang. Beberapa aspek kunci dari filosofi kebudayaan 
+                                        Minangkabau dalam. "Pancuri Cinto" berarti cinta kasih, sementara 
+                                        "Baco Bantu" mengandung ... 
+                                        <strong class="fw-bold">Selengkapnya</strong> </p>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M22.8337 12.1333C22.8337 10.7333 21.7004 9.99999 20.1671 9.99999H15.7004C16.0338 8.79999 16.1671 7.66666 16.1671 6.66666C16.1671 2.8 15.1004 2 14.1671 2C13.5671 2 13.1004 2.06667 12.5004 2.4C12.3004 2.53333 12.2338 2.66667 12.1671 2.86667L11.5004 6.46666C10.7671 8.33333 8.96709 9.99999 7.50043 11.1333V20.6667C8.03376 20.6667 8.56709 20.9333 9.23376 21.2667C9.96709 21.6 10.7004 22 11.5004 22H17.8338C19.1671 22 20.1671 20.9333 20.1671 20C20.1671 19.8 20.1671 19.6667 20.1004 19.5333C20.9004 19.2 21.5004 18.5333 21.5004 17.6667C21.5004 17.2667 21.4338 16.9333 21.3004 16.6C21.8337 16.2667 22.3004 15.6667 22.3004 15C22.3004 14.6 22.1004 14.2 21.9004 13.8667C22.4337 13.4667 22.8337 12.8 22.8337 12.1333ZM21.4338 12.1333C21.4338 13 20.5671 13.0667 20.4338 13.4667C20.3004 13.9333 20.9671 14.0667 20.9671 14.8667C20.9671 15.6667 19.9671 15.6667 19.8338 16.1333C19.7004 16.6667 20.1671 16.8 20.1671 17.6V17.7333C20.0338 18.4 19.0338 18.4667 18.8338 18.7333C18.6338 19.0667 18.8338 19.2 18.8338 19.9333C18.8338 20.3333 18.3671 20.6 17.8338 20.6H11.5004C10.9671 20.6 10.4338 20.3333 9.76709 20C9.23376 19.7333 8.70043 19.4667 8.16709 19.3333V12.3333C9.83376 11.0667 11.9671 9.19999 12.7671 6.86666V6.73333L13.3671 3.4C13.6338 3.33333 13.8338 3.33333 14.1671 3.33333C14.3004 3.33333 14.8338 4.13333 14.8338 6.66666C14.8338 7.66666 14.6338 8.73333 14.3004 9.99999H14.1671C13.7671 9.99999 13.5004 10.2667 13.5004 10.6667C13.5004 11.0667 13.7671 11.3333 14.1671 11.3333H20.1671C20.8337 11.3333 21.4338 11.6667 21.4338 12.1333Z"
+                                                fill="#707070" />
+                                            <path
+                                                d="M6.83333 22H2.83333C2.1 22 1.5 21.4 1.5 20.6667V11.3333C1.5 10.6 2.1 10 2.83333 10H6.83333C7.56666 10 8.16666 10.6 8.16666 11.3333V20.6667C8.16666 21.4 7.56666 22 6.83333 22ZM2.83333 11.3333V20.6667H6.83333V11.3333H2.83333Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                    1,234
+            
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M3.5 4.57515C3.5 3.70567 4.20567 3 5.07515 3H20.8267C21.6961 3 22.4018 3.70567 22.4018 4.57515V15.8262C22.4018 16.244 22.2359 16.6446 21.9405 16.94C21.6451 17.2354 21.2444 17.4014 20.8267 17.4014H12.1048L8.88882 20.6174C8.70524 20.8003 8.47164 20.9247 8.21746 20.975C7.96327 21.0253 7.69988 20.9993 7.46048 20.9001C7.22108 20.801 7.01639 20.6332 6.87221 20.4179C6.72803 20.2026 6.65082 19.9494 6.6503 19.6903V17.4014H5.07515C4.65739 17.4014 4.25675 17.2354 3.96135 16.94C3.66595 16.6446 3.5 16.244 3.5 15.8262V4.57515ZM5.07515 4.35013C5.01547 4.35013 4.95824 4.37384 4.91604 4.41604C4.87384 4.45824 4.85013 4.51547 4.85013 4.57515V15.8262C4.85013 15.9504 4.95094 16.0512 5.07515 16.0512H7.32537C7.5044 16.0512 7.67611 16.1224 7.80271 16.249C7.92931 16.3756 8.00043 16.5473 8.00043 16.7263V19.5976L11.3488 16.2493C11.4113 16.1865 11.4857 16.1367 11.5676 16.1028C11.6494 16.0688 11.7372 16.0513 11.8258 16.0512H20.8267C20.8863 16.0512 20.9436 16.0275 20.9858 15.9853C21.028 15.9431 21.0517 15.8859 21.0517 15.8262V4.57515C21.0517 4.51547 21.028 4.45824 20.9858 4.41604C20.9436 4.37384 20.8863 4.35013 20.8267 4.35013H5.07515Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                    24
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M18.5 22C17.6667 22 16.9583 21.7083 16.375 21.125C15.7917 20.5417 15.5 19.8333 15.5 19C15.5 18.8833 15.5083 18.7623 15.525 18.637C15.5417 18.5117 15.5667 18.3993 15.6 18.3L8.55 14.2C8.26667 14.45 7.95 14.646 7.6 14.788C7.25 14.93 6.88333 15.0007 6.5 15C5.66667 15 4.95833 14.7083 4.375 14.125C3.79167 13.5417 3.5 12.8333 3.5 12C3.5 11.1667 3.79167 10.4583 4.375 9.875C4.95833 9.29167 5.66667 9 6.5 9C6.88333 9 7.25 9.071 7.6 9.213C7.95 9.355 8.26667 9.55067 8.55 9.8L15.6 5.7C15.5667 5.6 15.5417 5.48767 15.525 5.363C15.5083 5.23833 15.5 5.11733 15.5 5C15.5 4.16667 15.7917 3.45833 16.375 2.875C16.9583 2.29167 17.6667 2 18.5 2C19.3333 2 20.0417 2.29167 20.625 2.875C21.2083 3.45833 21.5 4.16667 21.5 5C21.5 5.83333 21.2083 6.54167 20.625 7.125C20.0417 7.70833 19.3333 8 18.5 8C18.1167 8 17.75 7.92933 17.4 7.788C17.05 7.64667 16.7333 7.45067 16.45 7.2L9.4 11.3C9.43333 11.4 9.45833 11.5127 9.475 11.638C9.49167 11.7633 9.5 11.884 9.5 12C9.5 12.1167 9.49167 12.2377 9.475 12.363C9.45833 12.4883 9.43333 12.6007 9.4 12.7L16.45 16.8C16.7333 16.55 17.05 16.3543 17.4 16.213C17.75 16.0717 18.1167 16.0007 18.5 16C19.3333 16 20.0417 16.2917 20.625 16.875C21.2083 17.4583 21.5 18.1667 21.5 19C21.5 19.8333 21.2083 20.5417 20.625 21.125C20.0417 21.7083 19.3333 22 18.5 22ZM18.5 6C18.7833 6 19.021 5.904 19.213 5.712C19.405 5.52 19.5007 5.28267 19.5 5C19.5 4.71667 19.404 4.47933 19.212 4.288C19.02 4.09667 18.7827 4.00067 18.5 4C18.2167 4 17.9793 4.096 17.788 4.288C17.5967 4.48 17.5007 4.71733 17.5 5C17.5 5.28333 17.596 5.521 17.788 5.713C17.98 5.905 18.2173 6.00067 18.5 6ZM6.5 13C6.78333 13 7.021 12.904 7.213 12.712C7.405 12.52 7.50067 12.2827 7.5 12C7.5 11.7167 7.404 11.4793 7.212 11.288C7.02 11.0967 6.78267 11.0007 6.5 11C6.21667 11 5.97933 11.096 5.788 11.288C5.59667 11.48 5.50067 11.7173 5.5 12C5.5 12.2833 5.596 12.521 5.788 12.713C5.98 12.905 6.21733 13.0007 6.5 13ZM18.5 20C18.7833 20 19.021 19.904 19.213 19.712C19.405 19.52 19.5007 19.2827 19.5 19C19.5 18.7167 19.404 18.4793 19.212 18.288C19.02 18.0967 18.7827 18.0007 18.5 18C18.2167 18 17.9793 18.096 17.788 18.288C17.5967 18.48 17.5007 18.7173 17.5 19C17.5 19.2833 17.596 19.521 17.788 19.713C17.98 19.905 18.2173 20.0007 18.5 20Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="balasan" style="width: 100%;">
+                                    <img src="assets/img/forum/anda.png" alt="">
+                                    <input type="text" placeholder="Tulis balasan" style="border: none; width: 100%; padding: 12px 16px;">
+                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path
+                                            d="M3.42432 12.4625C3.42405 12.6111 3.46789 12.7563 3.55029 12.8799C3.63268 13.0035 3.74991 13.0998 3.88712 13.1567C4.02433 13.2136 4.17534 13.2284 4.321 13.1994C4.46667 13.1703 4.60042 13.0987 4.70532 12.9935L11.5978 6.09802C12.3012 5.39467 13.2551 4.99953 14.2498 4.99953C14.7423 4.99953 15.23 5.09654 15.6851 5.28502C16.1401 5.4735 16.5536 5.74976 16.9018 6.09802C17.2501 6.44629 17.5263 6.85974 17.7148 7.31477C17.9033 7.7698 18.0003 8.2575 18.0003 8.75002C18.0003 9.24255 17.9033 9.73024 17.7148 10.1853C17.5263 10.6403 17.2501 11.0538 16.9018 11.402L8.94732 19.3565C8.66441 19.6298 8.28551 19.781 7.89222 19.7775C7.49892 19.7741 7.1227 19.6164 6.84459 19.3383C6.56648 19.0601 6.40872 18.6839 6.40531 18.2906C6.40189 17.8973 6.55308 17.5184 6.82632 17.2355L14.7808 9.28102C14.8505 9.21129 14.9059 9.12851 14.9436 9.0374C14.9813 8.94629 15.0008 8.84864 15.0008 8.75002C15.0008 8.65141 14.9813 8.55376 14.9436 8.46265C14.9059 8.37154 14.8505 8.28876 14.7808 8.21902C14.7111 8.14929 14.6283 8.09398 14.5372 8.05624C14.4461 8.0185 14.3484 7.99908 14.2498 7.99908C14.1512 7.99908 14.0536 8.0185 13.9624 8.05624C13.8713 8.09398 13.7885 8.14929 13.7188 8.21902L5.76432 16.175C5.47779 16.4518 5.24924 16.7828 5.09201 17.1488C4.93479 17.5148 4.85203 17.9085 4.84857 18.3068C4.8451 18.7052 4.92101 19.1002 5.07185 19.4689C5.2227 19.8376 5.44545 20.1725 5.72713 20.4542C6.00881 20.7359 6.34377 20.9586 6.71246 21.1095C7.08114 21.2603 7.47618 21.3362 7.87452 21.3328C8.27286 21.3293 8.66652 21.2466 9.03253 21.0893C9.39854 20.9321 9.72958 20.7036 10.0063 20.417L17.9608 12.4625C18.9454 11.4779 19.4986 10.1425 19.4986 8.75002C19.4986 7.35757 18.9454 6.02214 17.9608 5.03752C16.9762 4.05291 15.6408 3.49976 14.2483 3.49976C12.8559 3.49976 11.5204 4.05291 10.5358 5.03752L3.64482 11.9315C3.57508 12.0012 3.51983 12.084 3.48224 12.1751C3.44465 12.2663 3.42398 12.3639 3.42432 12.4625Z"
+                                            fill="#707070" />
+                                    </svg></a>
+                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.34505 2.74494C2.49432 2.61528 2.67867 2.53277 2.87482 2.50785C3.07097 2.48293 3.2701 2.51672 3.44705 2.60494L21.447 11.6049C21.6135 11.6879 21.7534 11.8156 21.8513 11.9737C21.9491 12.1318 22.001 12.314 22.001 12.4999C22.001 12.6859 21.9491 12.8681 21.8513 13.0262C21.7534 13.1843 21.6135 13.312 21.447 13.3949L3.44705 22.3949C3.27011 22.4835 3.07089 22.5175 2.87459 22.4928C2.6783 22.4681 2.49374 22.3857 2.34429 22.256C2.19484 22.1264 2.0872 21.9553 2.035 21.7645C1.98281 21.5736 1.98839 21.3716 2.05105 21.1839L4.61305 13.4999H10C10.2653 13.4999 10.5196 13.3946 10.7072 13.2071C10.8947 13.0195 11 12.7652 11 12.4999C11 12.2347 10.8947 11.9804 10.7072 11.7928C10.5196 11.6053 10.2653 11.4999 10 11.4999H4.61305L2.05005 3.81594C1.98771 3.62836 1.98237 3.4265 2.0347 3.23588C2.08703 3.04526 2.19568 2.87442 2.34505 2.74494Z"
+                                            fill="#4AB273" />
+                                    </svg></a>
+                                </div>
+                                <div class="col mt-4" style="padding-left: 16px;">
+                                    <div class="d-flex me-3">
+                                        <div class=""><img src="assets/img/forum/sandi.png" alt="Gambar Bambang"></div>
+                                        <div class="ms-3">
+                                            <div><span class="fw-bold">Budi Sandi</span> <span class="caption ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="4" height="4"
+                                                    viewBox="0 0 4 4" fill="none">
+                                                    <circle cx="2" cy="2" r="2" fill="#707070" />
+                                                </svg> 5 menit yang lalu</span></div>
+                                                🌳 Pemelihara Tradisi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="body-light mt-3">
+                                        Terima kasih atas unggahannya yang menggambarkan kekayaan filosofi kebudayaan Minang. Saya
+                                        sangat terinspirasi oleh nilai-nilai gotong royong, kebersamaan, dan rasa syukur yang tercermin
+                                        dalam budaya tersebut. </span>
+                                    </div>
+                                </div>
+                                <div class="balasan-lainnya">
+                                    Lihat 23 balasan lainnya
+                                </div>
+                            </div>
+                            <div class="forum-col mt-3 mb-3">
+                                <div class="d-flex me-3">
+                                    <div class=""><img src="assets/img/asep.png" alt="Gambar Bambang"></div>
+                                    <div class="ms-3">
+                                        <div><span class="fw-bold">Asep Dadang</span> <span class="caption ms-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="4" height="4"
+                                                viewBox="0 0 4 4" fill="none">
+                                                <circle cx="2" cy="2" r="2" fill="#707070" />
+                                            </svg> 1 hari yang lalu</span></div>
+                                            🔰 Konservator Budaya
+                                        </span>
+                                    </div>
+                                </div>
+    
+                                <div class="title1 mt-4">
+                                    Indahnya candi di Indonesia !
+                                </div>
+                                <div class="body-light mt-0 mt-3"><p>Saya ingin membagikan beberapa momen saya</p></div>
+                                <img src="assets/img/candi.png" alt="Gambar Candi" width="100%" height="100%">
+                                <div class="d-flex align-items-center gap-3 mt-4">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M22.8337 12.1333C22.8337 10.7333 21.7004 9.99999 20.1671 9.99999H15.7004C16.0338 8.79999 16.1671 7.66666 16.1671 6.66666C16.1671 2.8 15.1004 2 14.1671 2C13.5671 2 13.1004 2.06667 12.5004 2.4C12.3004 2.53333 12.2338 2.66667 12.1671 2.86667L11.5004 6.46666C10.7671 8.33333 8.96709 9.99999 7.50043 11.1333V20.6667C8.03376 20.6667 8.56709 20.9333 9.23376 21.2667C9.96709 21.6 10.7004 22 11.5004 22H17.8338C19.1671 22 20.1671 20.9333 20.1671 20C20.1671 19.8 20.1671 19.6667 20.1004 19.5333C20.9004 19.2 21.5004 18.5333 21.5004 17.6667C21.5004 17.2667 21.4338 16.9333 21.3004 16.6C21.8337 16.2667 22.3004 15.6667 22.3004 15C22.3004 14.6 22.1004 14.2 21.9004 13.8667C22.4337 13.4667 22.8337 12.8 22.8337 12.1333ZM21.4338 12.1333C21.4338 13 20.5671 13.0667 20.4338 13.4667C20.3004 13.9333 20.9671 14.0667 20.9671 14.8667C20.9671 15.6667 19.9671 15.6667 19.8338 16.1333C19.7004 16.6667 20.1671 16.8 20.1671 17.6V17.7333C20.0338 18.4 19.0338 18.4667 18.8338 18.7333C18.6338 19.0667 18.8338 19.2 18.8338 19.9333C18.8338 20.3333 18.3671 20.6 17.8338 20.6H11.5004C10.9671 20.6 10.4338 20.3333 9.76709 20C9.23376 19.7333 8.70043 19.4667 8.16709 19.3333V12.3333C9.83376 11.0667 11.9671 9.19999 12.7671 6.86666V6.73333L13.3671 3.4C13.6338 3.33333 13.8338 3.33333 14.1671 3.33333C14.3004 3.33333 14.8338 4.13333 14.8338 6.66666C14.8338 7.66666 14.6338 8.73333 14.3004 9.99999H14.1671C13.7671 9.99999 13.5004 10.2667 13.5004 10.6667C13.5004 11.0667 13.7671 11.3333 14.1671 11.3333H20.1671C20.8337 11.3333 21.4338 11.6667 21.4338 12.1333Z"
+                                                fill="#707070" />
+                                            <path
+                                                d="M6.83333 22H2.83333C2.1 22 1.5 21.4 1.5 20.6667V11.3333C1.5 10.6 2.1 10 2.83333 10H6.83333C7.56666 10 8.16666 10.6 8.16666 11.3333V20.6667C8.16666 21.4 7.56666 22 6.83333 22ZM2.83333 11.3333V20.6667H6.83333V11.3333H2.83333Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                    1,234
+            
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M3.5 4.57515C3.5 3.70567 4.20567 3 5.07515 3H20.8267C21.6961 3 22.4018 3.70567 22.4018 4.57515V15.8262C22.4018 16.244 22.2359 16.6446 21.9405 16.94C21.6451 17.2354 21.2444 17.4014 20.8267 17.4014H12.1048L8.88882 20.6174C8.70524 20.8003 8.47164 20.9247 8.21746 20.975C7.96327 21.0253 7.69988 20.9993 7.46048 20.9001C7.22108 20.801 7.01639 20.6332 6.87221 20.4179C6.72803 20.2026 6.65082 19.9494 6.6503 19.6903V17.4014H5.07515C4.65739 17.4014 4.25675 17.2354 3.96135 16.94C3.66595 16.6446 3.5 16.244 3.5 15.8262V4.57515ZM5.07515 4.35013C5.01547 4.35013 4.95824 4.37384 4.91604 4.41604C4.87384 4.45824 4.85013 4.51547 4.85013 4.57515V15.8262C4.85013 15.9504 4.95094 16.0512 5.07515 16.0512H7.32537C7.5044 16.0512 7.67611 16.1224 7.80271 16.249C7.92931 16.3756 8.00043 16.5473 8.00043 16.7263V19.5976L11.3488 16.2493C11.4113 16.1865 11.4857 16.1367 11.5676 16.1028C11.6494 16.0688 11.7372 16.0513 11.8258 16.0512H20.8267C20.8863 16.0512 20.9436 16.0275 20.9858 15.9853C21.028 15.9431 21.0517 15.8859 21.0517 15.8262V4.57515C21.0517 4.51547 21.028 4.45824 20.9858 4.41604C20.9436 4.37384 20.8863 4.35013 20.8267 4.35013H5.07515Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                    24
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                            fill="none">
+                                            <path
+                                                d="M18.5 22C17.6667 22 16.9583 21.7083 16.375 21.125C15.7917 20.5417 15.5 19.8333 15.5 19C15.5 18.8833 15.5083 18.7623 15.525 18.637C15.5417 18.5117 15.5667 18.3993 15.6 18.3L8.55 14.2C8.26667 14.45 7.95 14.646 7.6 14.788C7.25 14.93 6.88333 15.0007 6.5 15C5.66667 15 4.95833 14.7083 4.375 14.125C3.79167 13.5417 3.5 12.8333 3.5 12C3.5 11.1667 3.79167 10.4583 4.375 9.875C4.95833 9.29167 5.66667 9 6.5 9C6.88333 9 7.25 9.071 7.6 9.213C7.95 9.355 8.26667 9.55067 8.55 9.8L15.6 5.7C15.5667 5.6 15.5417 5.48767 15.525 5.363C15.5083 5.23833 15.5 5.11733 15.5 5C15.5 4.16667 15.7917 3.45833 16.375 2.875C16.9583 2.29167 17.6667 2 18.5 2C19.3333 2 20.0417 2.29167 20.625 2.875C21.2083 3.45833 21.5 4.16667 21.5 5C21.5 5.83333 21.2083 6.54167 20.625 7.125C20.0417 7.70833 19.3333 8 18.5 8C18.1167 8 17.75 7.92933 17.4 7.788C17.05 7.64667 16.7333 7.45067 16.45 7.2L9.4 11.3C9.43333 11.4 9.45833 11.5127 9.475 11.638C9.49167 11.7633 9.5 11.884 9.5 12C9.5 12.1167 9.49167 12.2377 9.475 12.363C9.45833 12.4883 9.43333 12.6007 9.4 12.7L16.45 16.8C16.7333 16.55 17.05 16.3543 17.4 16.213C17.75 16.0717 18.1167 16.0007 18.5 16C19.3333 16 20.0417 16.2917 20.625 16.875C21.2083 17.4583 21.5 18.1667 21.5 19C21.5 19.8333 21.2083 20.5417 20.625 21.125C20.0417 21.7083 19.3333 22 18.5 22ZM18.5 6C18.7833 6 19.021 5.904 19.213 5.712C19.405 5.52 19.5007 5.28267 19.5 5C19.5 4.71667 19.404 4.47933 19.212 4.288C19.02 4.09667 18.7827 4.00067 18.5 4C18.2167 4 17.9793 4.096 17.788 4.288C17.5967 4.48 17.5007 4.71733 17.5 5C17.5 5.28333 17.596 5.521 17.788 5.713C17.98 5.905 18.2173 6.00067 18.5 6ZM6.5 13C6.78333 13 7.021 12.904 7.213 12.712C7.405 12.52 7.50067 12.2827 7.5 12C7.5 11.7167 7.404 11.4793 7.212 11.288C7.02 11.0967 6.78267 11.0007 6.5 11C6.21667 11 5.97933 11.096 5.788 11.288C5.59667 11.48 5.50067 11.7173 5.5 12C5.5 12.2833 5.596 12.521 5.788 12.713C5.98 12.905 6.21733 13.0007 6.5 13ZM18.5 20C18.7833 20 19.021 19.904 19.213 19.712C19.405 19.52 19.5007 19.2827 19.5 19C19.5 18.7167 19.404 18.4793 19.212 18.288C19.02 18.0967 18.7827 18.0007 18.5 18C18.2167 18 17.9793 18.096 17.788 18.288C17.5967 18.48 17.5007 18.7173 17.5 19C17.5 19.2833 17.596 19.521 17.788 19.713C17.98 19.905 18.2173 20.0007 18.5 20Z"
+                                                fill="#707070" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="balasan" style="width: 100%;">
+                                    <img src="assets/img/forum/anda.png" alt="">
+                                    <input type="text" placeholder="Tulis balasan" style="border: none; width: 100%; padding: 12px 16px;">
+                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path
+                                            d="M3.42432 12.4625C3.42405 12.6111 3.46789 12.7563 3.55029 12.8799C3.63268 13.0035 3.74991 13.0998 3.88712 13.1567C4.02433 13.2136 4.17534 13.2284 4.321 13.1994C4.46667 13.1703 4.60042 13.0987 4.70532 12.9935L11.5978 6.09802C12.3012 5.39467 13.2551 4.99953 14.2498 4.99953C14.7423 4.99953 15.23 5.09654 15.6851 5.28502C16.1401 5.4735 16.5536 5.74976 16.9018 6.09802C17.2501 6.44629 17.5263 6.85974 17.7148 7.31477C17.9033 7.7698 18.0003 8.2575 18.0003 8.75002C18.0003 9.24255 17.9033 9.73024 17.7148 10.1853C17.5263 10.6403 17.2501 11.0538 16.9018 11.402L8.94732 19.3565C8.66441 19.6298 8.28551 19.781 7.89222 19.7775C7.49892 19.7741 7.1227 19.6164 6.84459 19.3383C6.56648 19.0601 6.40872 18.6839 6.40531 18.2906C6.40189 17.8973 6.55308 17.5184 6.82632 17.2355L14.7808 9.28102C14.8505 9.21129 14.9059 9.12851 14.9436 9.0374C14.9813 8.94629 15.0008 8.84864 15.0008 8.75002C15.0008 8.65141 14.9813 8.55376 14.9436 8.46265C14.9059 8.37154 14.8505 8.28876 14.7808 8.21902C14.7111 8.14929 14.6283 8.09398 14.5372 8.05624C14.4461 8.0185 14.3484 7.99908 14.2498 7.99908C14.1512 7.99908 14.0536 8.0185 13.9624 8.05624C13.8713 8.09398 13.7885 8.14929 13.7188 8.21902L5.76432 16.175C5.47779 16.4518 5.24924 16.7828 5.09201 17.1488C4.93479 17.5148 4.85203 17.9085 4.84857 18.3068C4.8451 18.7052 4.92101 19.1002 5.07185 19.4689C5.2227 19.8376 5.44545 20.1725 5.72713 20.4542C6.00881 20.7359 6.34377 20.9586 6.71246 21.1095C7.08114 21.2603 7.47618 21.3362 7.87452 21.3328C8.27286 21.3293 8.66652 21.2466 9.03253 21.0893C9.39854 20.9321 9.72958 20.7036 10.0063 20.417L17.9608 12.4625C18.9454 11.4779 19.4986 10.1425 19.4986 8.75002C19.4986 7.35757 18.9454 6.02214 17.9608 5.03752C16.9762 4.05291 15.6408 3.49976 14.2483 3.49976C12.8559 3.49976 11.5204 4.05291 10.5358 5.03752L3.64482 11.9315C3.57508 12.0012 3.51983 12.084 3.48224 12.1751C3.44465 12.2663 3.42398 12.3639 3.42432 12.4625Z"
+                                            fill="#707070" />
+                                    </svg></a>
+                                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.34505 2.74494C2.49432 2.61528 2.67867 2.53277 2.87482 2.50785C3.07097 2.48293 3.2701 2.51672 3.44705 2.60494L21.447 11.6049C21.6135 11.6879 21.7534 11.8156 21.8513 11.9737C21.9491 12.1318 22.001 12.314 22.001 12.4999C22.001 12.6859 21.9491 12.8681 21.8513 13.0262C21.7534 13.1843 21.6135 13.312 21.447 13.3949L3.44705 22.3949C3.27011 22.4835 3.07089 22.5175 2.87459 22.4928C2.6783 22.4681 2.49374 22.3857 2.34429 22.256C2.19484 22.1264 2.0872 21.9553 2.035 21.7645C1.98281 21.5736 1.98839 21.3716 2.05105 21.1839L4.61305 13.4999H10C10.2653 13.4999 10.5196 13.3946 10.7072 13.2071C10.8947 13.0195 11 12.7652 11 12.4999C11 12.2347 10.8947 11.9804 10.7072 11.7928C10.5196 11.6053 10.2653 11.4999 10 11.4999H4.61305L2.05005 3.81594C1.98771 3.62836 1.98237 3.4265 2.0347 3.23588C2.08703 3.04526 2.19568 2.87442 2.34505 2.74494Z"
+                                            fill="#4AB273" />
+                                    </svg></a>
+                                </div>
+                                <div class="col mt-4" style="padding-left: 16px;">
+                                    <div class="d-flex me-3">
+                                        <div class=""><img src="assets/img/forum/efendi.png" alt="Gambar Bambang"></div>
+                                        <div class="ms-3">
+                                            <div><span class="fw-bold">Ahmad Efendi</span> <span class="caption ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="me-3" width="4" height="4"
+                                                    viewBox="0 0 4 4" fill="none">
+                                                    <circle cx="2" cy="2" r="2" fill="#707070" />
+                                                </svg> 5 menit yang lalu</span></div>
+                                                🌳 Pemelihara Tradisi
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="body-light mt-3">
+                                        Sungguh luar biasa keindahan peninggalan sejarah di Indonesia, arsitektur yang sangat 
+                                        estetik dan tercermin kebudayaan yang kental pada zaman itu. Jadi pengen juga eksplor 
+                                        kaya mas nya hehe... </span>
+                                    </div>
+                                </div>
+                                <div class="balasan-lainnya">
+                                    Lihat 66 balasan lainnya
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 mt-4 mt-lg-0 p-4" 
+                    style="align-self: flex-start; border-radius: 16px; background-color: #F2F2F2;">
+                    <div style="display: inline-block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="tagar-terkini" width="48" height="48"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M16.5 6.75H21.75V12" stroke="#35965C" stroke-width="1.75" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2.25 17.25L7.93922 11.5608C8.07851 11.4215 8.24388 11.3109 8.4259 11.2355C8.60791 11.1601 8.80299 11.1213 9 11.1213C9.19701 11.1213 9.39209 11.1601 9.5741 11.2355C9.75612 11.3109 9.92149 11.4215 10.0608 11.5608L12.4392 13.9392C12.5785 14.0785 12.7439 14.1891 12.9259 14.2645C13.1079 14.3399 13.303 14.3787 13.5 14.3787C13.697 14.3787 13.8921 14.3399 14.0741 14.2645C14.2561 14.1891 14.4215 14.0785 14.5608 13.9392L21 7.5"
+                                stroke="#35965C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h5 style="display: inline-block; vertical-align: middle;">Tagar Tren Terkini</h5>
+                    </div>
+
+                    <ul class="mt-3">
+                        <li class="list-unstyled">
+                            <div class="text-reguler text-dark">#pacujalur</div>
+                            <div class="caption">1,324 unggahan</div>
+                        </li>
+                        <li class="list-unstyled mt-3">
+                            <div class="text-reguler text-dark">#festivalbudayanusantara</div>
+                            <div class="caption">231 unggahan</div>
+                        </li>
+                        <li class="list-unstyled mt-3">
+                            <div class="text-reguler text-dark">#mamrendang</div>
+                            <div class="caption">1,928 unggahan</div>
+                        </li>
+                        <li class="list-unstyled mt-3">
+                            <div class="text-reguler text-dark">#borneo</div>
+                            <div class="caption">2,853 unggahan</div>
+                        </li>
+                        <li class="list-unstyled mt-3">
+                            <div class="text-reguler text-dark">#kecak</div>
+                            <div class="caption">115 unggahan</div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="col-lg-7 text-center mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                    <path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3"
+                        d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z">
+                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0" />
+                    </path>
+                    <path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12">
+                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0" />
+                        <animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite"
+                            type="rotate" values="0 12 12;360 12 12" />
+                    </path>
+                </g>
+            </svg> Memuat konten ...
+        </div>   
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 text-light">
+                <div class="col-md-6 mb-3">
+                    <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                        <img src="assets/img/logo-footer.png" alt="">
+                    </a>
+                    <p class="text">Simpan Sejarah, Sentuh Masa Depan</p>
+                    <div class="col d-flex align-items-start">
+                        <div>
+                            <a href="#">
+                                <img src="assets/img/icon-sosmed/facebook.png" alt="" class="me-3">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/icon-sosmed/twitter.png" alt="" class="me-3">
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/icon-sosmed/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3 mt-3">
+                    <div class="row">
+                        <div class="col mb-3">
+                            <div class="title2 text-light mb-3">Tentang</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Tentang Kami</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Donasi</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Saran</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Kontak</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <div class="title2 text-light mb-3">Fitur</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Eksplor</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Forum</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Acara</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Quiz</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <div class="title2 text-light mb-3">Hukum</div>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Syarat Pengguna</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Kebijakan
+                                        Pribadi</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Kebijakan
+                                        Keamanan</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 sub-title">Pengaturan
+                                        Cookie</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <p class="text-center footer text-light">© Copyright 2023 Ruang Budaya. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/script/script.js"></script>
+
+</body>
+
+</html>
